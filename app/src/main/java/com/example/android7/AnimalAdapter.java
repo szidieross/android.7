@@ -40,7 +40,9 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, animal.getName(), Toast.LENGTH_SHORT).show();
+                String message = "Name: " + animal.getName() + ", " +
+                        "average Lifespan: " + animal.getAverageLifespan() + " years";
+                Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
             }
         });
     }

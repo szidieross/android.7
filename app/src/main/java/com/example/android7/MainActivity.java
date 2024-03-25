@@ -23,14 +23,14 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         animals = new ArrayList<>();
-        animals.add(new Animal("Dog", R.drawable.dog, 20));
-        animals.add(new Animal("Cat", R.drawable.cat, 60));
-        animals.add(new Animal("Giraffe", R.drawable.dog, 20));
-        animals.add(new Animal("Horse", R.drawable.cat, 60));
-        animals.add(new Animal("Lion", R.drawable.dog, 20));
-        animals.add(new Animal("Octopus", R.drawable.cat, 60));
-        animals.add(new Animal("Rabbit", R.drawable.dog, 20));
-        animals.add(new Animal("Sheep", R.drawable.cat, 60));
+        animals.add(new Animal("Dog", R.drawable.dog, 13));
+        animals.add(new Animal("Cat", R.drawable.cat, 16));
+        animals.add(new Animal("Giraffe", R.drawable.giraffe, 25));
+        animals.add(new Animal("Horse", R.drawable.horse, 25));
+        animals.add(new Animal("Lion", R.drawable.lion, 20));
+        animals.add(new Animal("Octopus", R.drawable.octopus, 3));
+        animals.add(new Animal("Rabbit", R.drawable.rabbit, 9));
+        animals.add(new Animal("Sheep", R.drawable.sheep, 12));
 
         animalAdapter = new AnimalAdapter(this, animals);
         recyclerView.setAdapter(animalAdapter);
